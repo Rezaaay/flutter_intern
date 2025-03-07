@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "895650774766",
+    "project_id": "intern-project-koesnadi",
+    "storage_bucket": "intern-project-koesnadi.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:895650774766:android:df2c6a2316c3c11f453dff",
+        "android_client_info": {
+          "package_name": "com.example.flutter_intern"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBLDsn2665BSo3Jr9FJ-1I3UVLQv-n5dHs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

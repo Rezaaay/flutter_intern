@@ -1,0 +1,11 @@
+part of 'login_bloc.dart';
+
+@freezed
+class LoginEvent with _$LoginEvent {
+  const factory LoginEvent.started() = _Started;
+  const factory LoginEvent.loginWithEmailAndPassword(
+      String email,
+      String password,
+  ) = _LoginWithEmailAndPassword;
+  const factory LoginEvent.loginWithGoogle() = _LoginWithGoogle;
+}
