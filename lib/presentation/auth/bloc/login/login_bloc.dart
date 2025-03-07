@@ -1,6 +1,6 @@
 import 'package:bloc/bloc.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:flutter_intern/datasource/firebase_firestore_remote_datasource.dart';
+import 'package:flutter_intern/datasource/authlocal_datasource.dart';
 import 'package:freezed_annotation/freezed_annotation.dart';
 
 part 'login_event.dart';
@@ -22,8 +22,7 @@ class LoginBloc extends Bloc<LoginEvent, LoginState> {
             await userCredential.user?.getIdToken(); // Ambil ID Token
 
         if (idToken != null && idToken.isNotEmpty) {
-          await FirebaseFirestoreRemoteDatasource.instance.saveAuthToken();
-          await FirebaseFirestoreRemoteDatasource.instance.saveEmail(event.email);
+          await AuthlocalDatasource.instance.saveAuthToken();
           print('ID Token berhasil disimpan: $idToken');
         } else {
           print('Gagal mendapatkan ID Token.');

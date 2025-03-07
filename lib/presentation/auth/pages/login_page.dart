@@ -6,9 +6,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_intern/core%20/core.dart';
-import 'package:flutter_intern/presentation/auth/login/login_bloc.dart';
+import 'package:flutter_intern/presentation/auth/bloc/login/login_bloc.dart';
 import 'package:flutter_intern/presentation/auth/pages/register_page.dart';
-import 'package:flutter_intern/presentation/home/homepage.dart';
+import 'package:flutter_intern/presentation/home/view/homepage.dart';
 
 import '../../../core /assets/assets.gen.dart';
 import '../../../core /components/custom_text_field.dart';

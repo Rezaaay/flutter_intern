@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_intern/datasource/firebase_firestore_remote_datasource.dart';
-import 'package:flutter_intern/presentation/home/homepage.dart';
+import 'package:flutter_intern/datasource/authlocal_datasource.dart';
+import 'package:flutter_intern/presentation/home/view/homepage.dart';
 import 'package:google_fonts/google_fonts.dart';
 import '../../../core /core.dart';
 
@@ -20,7 +20,7 @@ class _SplashPageState extends State<SplashPage> {
       body: FutureBuilder<String?>(
         future: Future.delayed(
           const Duration(milliseconds: 2000),
-          () => FirebaseFirestoreRemoteDatasource.instance.getAuthToken(),
+          () => AuthlocalDatasource.instance.getAuthToken(),
         ),
         builder: (context, snapshot) {
           if (snapshot.connectionState == ConnectionState.done) {

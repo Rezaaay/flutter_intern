@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import 'package:flutter_intern/core%20/core.dart';
-import 'package:flutter_intern/presentation/auth/regist/regist_bloc.dart';
+import 'package:flutter_intern/presentation/auth/bloc/regist/regist_bloc.dart';
 
 import 'package:image_picker/image_picker.dart';
 

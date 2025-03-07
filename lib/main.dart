@@ -4,12 +4,11 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_intern/core%20/constants/colors.dart';
-import 'package:flutter_intern/datasource/firebase_firestore_remote_datasource.dart';
 import 'package:flutter_intern/firebase_options.dart';
-import 'package:flutter_intern/presentation/auth/login/login_bloc.dart';
+import 'package:flutter_intern/presentation/auth/bloc/login/login_bloc.dart';
 import 'package:flutter_intern/presentation/auth/pages/splash_page.dart';
-import 'package:flutter_intern/presentation/auth/regist/regist_bloc.dart';
-import 'package:flutter_intern/presentation/home/data_user_bloc/data_user_bloc.dart';
+import 'package:flutter_intern/presentation/auth/bloc/regist/regist_bloc.dart';
+import 'package:flutter_intern/presentation/home/bloc/data_user_bloc/data_user_bloc.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 final GlobalKey<NavigatorState> globalNavigatorKey = GlobalKey<NavigatorState>();
