@@ -4,6 +4,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_intern/core%20/constants/colors.dart';
+import 'package:flutter_intern/datasource/firestore_remote_datasource.dart';
 import 'package:flutter_intern/firebase_options.dart';
 import 'package:flutter_intern/presentation/auth/bloc/login/login_bloc.dart';
 import 'package:flutter_intern/presentation/auth/pages/splash_page.dart';
@@ -42,11 +43,11 @@ class MyApp extends StatelessWidget {
         ),
         BlocProvider(
           create: (context) => DataUserBloc(
-            FirebaseFirestore.instance),
+            FirestoreRemoteDataSource(FirebaseFirestore.instance)),
         ),
       ],
       child: MaterialApp(
-        title: 'Flutter Dmo',
+        title: 'Flutter Demo',
         theme: ThemeData(
           useMaterial3: false,
           colorScheme: ColorScheme.fromSeed(seedColor: AppColors.primary),

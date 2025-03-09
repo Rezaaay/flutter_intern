@@ -70,8 +70,7 @@ class _HomepageState extends State<Homepage> {
               leading: const Icon(Icons.logout),
               title: const Text("Logout"),
               onTap: () async {
-                await AuthlocalDatasource.instance
-                    .removeAuthToken();
+                await AuthlocalDatasource.instance.removeAuthToken();
                 await FirebaseAuth.instance.signOut();
                 if (mounted) {
                   Navigator.pushReplacement(
@@ -278,23 +277,6 @@ class _HomepageState extends State<Homepage> {
                       },
                     ),
                   ),
-                  // Button.filled(
-                  //   onPressed: () {
-                  //     _updateUser(
-                  //         documentId,
-                  //         namaController.text,
-                  //         noHpController.text,
-                  //         alamatController.text,
-                  //         roleController.text);
-                  //   },
-                  //   label: const Text(
-                  //     "Edit",
-                  //     style: TextStyle(
-                  //       fontSize: 16.0,
-                  //       fontWeight: FontWeight.w600,
-                  //     ),
-                  //   ),
-                  // ),
                 ],
               ),
             ],
